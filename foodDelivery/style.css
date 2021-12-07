@@ -1,0 +1,36 @@
+*{
+    outline: none;
+}
+body{
+    background: url(./bg2.jpg);
+}
+.navbar{
+    background: rgba(0,0,0,0.2);
+}
+.navbar a {
+    color: #000;
+}
+
+#loginUser h2{
+    text-align: center;
+}
+#EmailLoginLabel, #passwordLoginLabel{
+    font-size: 20px;
+}
+#EmailLogin, #passwordLogin{
+background: transparent;
+border-color: #000;
+}
+#LoginUserDiv{
+    text-align: center;
+}
+#LoginUserDiv button{
+    width: 90px;
+    height: 35px;
+    background: transparent;
+    border-radius: 8px;
+}
+#LoginUserDiv button:hover{
+    background-color: #e8a62d;
+
+}

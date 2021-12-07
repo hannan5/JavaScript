@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Firebase  -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- css File -->
+    <link rel="stylesheet" a href="./signup.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="./signup.html">Food Delivery</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home </a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="mainHeading">
+        <h2> Welcome to Food Delivery</h2>
+        <button type="button" id="signResturantBtn">SignUp as Resturant</button>
+        <button type="button" id="signUserBtn">SignUp as Customer</button>
+
+    </div>
+    <!-- Resturant signup  -->
+    <div class="container" id="signUpResturant" >
+        <h2> Welcome to Food Delivery</h2>
+        <form id="form">
+            <div class="row mb-4">
+                <label for="resturantName" class="col-sm-2" id="resturantNameLabel">Resturant Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control " id="resturantName">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <label for="resturantEmail" id="resturantEmailLabel" class="col-sm-2">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control " id="resturantEmail">
+                </div>
+            </div>`
+
+            <div class="row mb-4">
+                <label for="country" id="countryLabel" class="col-sm-2">Country:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control " id="country">
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <label for="city" id="cityLabel" class="col-sm-2">City:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control " id="city">
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <label for="resturantPassword" id="resturantPasswordLabel" class="col-sm-2">Password:</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control " id="resturantPassword">
+                </div>
+            </div>
+            <div id="signInResturantDiv">
+            <button type="submit" id="signInResturantBtn">SignUp</button>
+            <button type="submit" id="LoginButton"><a href="./index.html"> Login </a></button>
+        </div>
+        </form>
+    </div>
+
+    <!-- User Signup  -->
+
+    <div class="container" id="signUpUser">
+        <h2> Welcome to Food Delivery</h2>
+        <form id="formUser">
+            <div class="row mb-4">
+                <label for="userName" class="col-sm-2" id="userNameLabel">User Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control " id="userName">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <label for="userEmail" id="userEmailLabel" class="col-sm-2">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control " id="userEmail">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <label for="userPhone" id="userPhoneLabel" class="col-sm-2">Phone:</label>
+                <div class="col-sm-10">
+                    <input type="tel" class="form-control " id="userPhone">
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <label for="usercountry" id="usercountryLabel" class="col-sm-2">Country:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control " id="usercountry">
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <label for="usercity" id="usercityLabel" class="col-sm-2">City:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control " id="usercity">
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <label for="userPassword" id="userPasswordLabel" class="col-sm-2">Password:</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control " id="userPassword">
+                </div>
+                <div id="signInUserDiv">
+                    <button type="submit" id="signInUserBtn">SignUp</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+        <script src="./signup.js"></script>
+        <script src="./fire.js"></script>
+</body>
+
+</html>

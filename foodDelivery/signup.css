@@ -1,0 +1,71 @@
+*{
+    outline: none;
+}
+body{
+    background: url(./bg2.jpg);
+}
+.navbar{
+    background: rgba(0,0,0,0.2);
+}
+.navbar a {
+    color: #000;
+}
+
+#mainHeading{
+    text-align: center;
+}
+#mainHeading button{
+    width: 180px;
+    height: 40px;
+}
+#mainHeading button:hover{
+    background-color: #e8a62d;
+}
+/* SignupResturant  */
+
+#signUpResturant{
+    display: none;
+}
+#resturantNameLabel, #resturantEmailLabel, #countryLabel, #cityLabel, #resturantPasswordLabel{
+    font-size: 20px;
+}
+#resturantName, #resturantEmail, #country, #city, #resturantPassword{
+    background: transparent;
+}
+#resturantName:hover , #resturantEmail:hover, #country:hover, #city:hover, #resturantPassword:hover{
+    background: rgba(0,0,0,0.2);
+
+}
+#signInResturantDiv{
+    display: flex;
+    justify-content: center;
+}
+/* #signInUserDiv{
+    position: absolute;
+    left: 50%;
+
+}
+#signInUserBtn{
+    width: 100px;
+    height: 35px;
+    background: transparent;    
+} */
+#signInResturantBtn{
+width: 100px;
+height: 35px;
+background: transparent;
+margin-right: 50px;
+}
+/* User Signup  */
+#signUpUser{
+    display: none;
+}
+#userNameLabel, #userEmailLabel, #userPhoneLabel, #usercountryLabel, #usercityLabel, #userPasswordLabel{
+    font-size: 20px;
+}
+#userName, #userEmail, #userPhone, #usercountry, #usercity, #userPassword{
+    background: transparent;
+}
+#userName:hover, #userEmail:hover, #userPhone:hover, #usercountry:hover, #usercity:hover, #userPassword:hover{
+    background: rgba(0,0,0,0.2);
+}
