@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background: linear-gradient(to right, #2d85b7, #ae2d87); */
+    background: linear-gradient(to right, #2d85b7, #ae2d87);
 }
 .wrapper{
     height: 500px;
@@ -35,6 +35,11 @@ background-size: cover;
 /* -moz-box-shadow: 0px 6px 6px #ccc;
 -webkit-box-shadow: 0px 6px 6px #ccc; */
 box-shadow: 0px 6px 6px #ccc;
+}
+.playing-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 .song-name{
     font-size: 20px;
@@ -76,6 +81,13 @@ border-radius: 10px;
 .current-time, .song-time{
 padding: 5px;
 }
+.bi-volume-mute-fill, .bi-volume-up-fill{
+    padding: 10px;
+}
+
+
+
+
 .buttons{
     display: flex;
     justify-content: center;
@@ -90,6 +102,23 @@ padding: 5px;
     font-size: 20px;
     transition: opacity .2s;
 }
+i.bi-shuffle, i.bi-skip-backward-fill, i.bi-skip-forward-fill, i.bi-arrow-repeat, i.bi-play-circle-fill, i.bi-pause-circle-fill{
+    cursor: pointer;
+}
 .bi-volume-mute-fill, .bi-volume-up-fill{
     padding: 10px;
+}
+
+
+
+.anime{
+    animation: rotatePlayer 3s linear infinite;
+}
+@keyframes rotatePlayer{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
